@@ -7,7 +7,7 @@ A variety of techniques were used throughout this project. First, I pre-trained 
 
 Here is an example of the auto-cropping results, one of the preprocessing techniques used. Notice how the retina images are focused and unnecessary borders are completely cropped:
 
-<img width="900" height="100" alt="image" src="https://github.com/Ari1029/DR-Vision/assets/45503218/e0466e32-1f5b-4fd3-87b4-cddf7a127e2b">
+<img width="1050" height="100" alt="image" src="https://github.com/Ari1029/DR-Vision/assets/45503218/e0466e32-1f5b-4fd3-87b4-cddf7a127e2b">
 
 Finally, test time augmentation (TTA) was used for each image during inference. In particular, 90 degree rotations, vertical and horizontal flips were applied to each image. This results in 4 predictions for each model, which were averaged to obtain one model's final prediction. Then, the final predictions for each sample are averaged to decide on the final class. A test set was created, as the cross validation set was used to optimize for the best-performing threshold.
 
